@@ -1,12 +1,9 @@
-/*A line drawing algorithm is a graphical algorithm for approximating a line segment on discrete graphical media. */
-
 #include<stdio.h>
 #include<math.h>
 
 #define MAX_X 1920
 #define MAX_Y 1080
 #define MAX(a,b) ((a) > (b) ? a : b)
-#define MIN(a,b) ((a) < (b) ? a : b)
 
 int raster[MAX_X][MAX_Y];
 
