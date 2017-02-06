@@ -33,19 +33,20 @@ int main(){
 	d=(2*dy)-dx;
 	incE = 2*dy;
 	incNE= 2*(dy-dx);
-	
+
 	//validate
 
 	int y=y0;
-	for(int x=x0; x<x1; x++){
+	for(int x=x0; x<=x1; x++){
+		raster[x][y]=1;
+		printf("( %d , %d )\n",x,y);
 		if(d<=0){
 			d+=incE;
 		}else {
 			d+=incNE;
 			y++;
 		}
-		raster[x][y]=1;
-		printf("( %d , %d )\n",x,y);
+		
 	}
 
 	printRaster(MAX(x0,x1), MAX(y0,y1));
