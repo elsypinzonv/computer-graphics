@@ -1,4 +1,4 @@
-/*Generate a Random FULL HS Image*/
+/*Generate a Random FULL HD Image*/
 
 #include <stdlib.h>
 #include <stdio.h>
